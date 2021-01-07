@@ -23,11 +23,17 @@
 ////////// PROBLEM 1 //////////
 
 /*
-  Write a function called first that takes in two parameters, an array and a callback function.
-  Then invoke the callback function, passing in the first element in the array as it's argument.
+  Write a function called first that takes in two parameters, an array and a callback function. - DONE
+  Then invoke the callback function, passing in the first element in the array as it's argument. - DONE
 */
 
-// Code Here 
+
+const first = (arr, cb) => {
+  cb(arr[0])
+}
+
+
+
 
 // Do not edit the code below.
 var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan'];
@@ -43,11 +49,17 @@ first(names, function(firstName){
 ////////// PROBLEM 2 //////////
 
 /*
-  Write a function called last that takes in an array and a callback function. 
-  Then invoke the callback, passing in the last element in the array as the argument.
+  Write a function called last that takes in an array and a callback function.  - DONE
+  Then invoke the callback, passing in the last element in the array as the argument. - DONE
 */
 
-//Code Here
+const last = (arr, cb) => {
+
+  cb(arr[arr.length-1])
+
+}
+
+
 
 // Do not edit the code below.
 last(names, function(lastName){
@@ -61,11 +73,17 @@ last(names, function(lastName){
 ////////// PROBLEM 3 //////////
 
 /*
-  Write a function called multiply that takes in three parameters: two numbers and a callback function.  
+  Write a function called multiply that takes in three parameters: two numbers and a callback function.  - DONE 
   Invoke the callback, passing in the product of the two numbers multiplied as the argument. 
 */
 
-//Code Here
+const multiply = (one, two, cb) =>{
+
+  cb((one*two));
+
+}
+
+
 
 // Do not edit the code below.
 multiply(4, 3, function(answer){
@@ -78,13 +96,17 @@ multiply(4, 3, function(answer){
 ////////// PROBLEM 4 //////////
 
 /*
-  Write a function called contains that takes in three parameters: an array, a name and a callback.  
+  Write a function called contains that takes in three parameters: an array, a name and a callback.  - DONE
   Check if the name exists in the array. 
   If it does, invoke the callback with true as the argument. 
   If the name does not exist, invoke the callback with false as the argument.
 */
 
-//Code Here 
+const contains = (arr, name, cb)=> {
+if (name === name) {
+  
+}
+} 
 
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
@@ -105,7 +127,9 @@ contains(names, 'Colt', function(result){
   Remove any duplicate values from the array, and invoke the callback with the modified array as an argument.
 */
 
-//Code Here
+const uniq = (arr, cb) => {
+
+}
 
 // Do not edit the code below.
 uniq(names, function(uniqArr){
