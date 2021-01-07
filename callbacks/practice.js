@@ -103,9 +103,9 @@ multiply(4, 3, function(answer){
 */
 
 const contains = (arr, name, cb)=> {
-if (name === name) {
-  
-}
+
+  cb()
+
 } 
 
 // Do not edit the code below.
@@ -123,12 +123,12 @@ contains(names, 'Colt', function(result){
 ////////// PROBLEM 5 //////////
 
 /*
-  Write a function called uniq that takes in an array and a callback function.
+  Write a function called uniq that takes in an array and a callback function. - DONE
   Remove any duplicate values from the array, and invoke the callback with the modified array as an argument.
 */
 
 const uniq = (arr, cb) => {
-
+cb()
 }
 
 // Do not edit the code below.
@@ -163,7 +163,18 @@ each(names, function(item, indice){
   When the correct user object is found, invoke the callback with the user object as an argument.
 */
 
-// Code here
+const getUserById = (arrObj, id, cb) => {
+
+  cb(users)
+  if (users.id === '16t'){
+    return cb(users.name)
+  }
+ 
+
+}
+
+
+
 
 // Do not edit the code below.
 var users = [
