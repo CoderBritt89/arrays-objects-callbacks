@@ -180,17 +180,18 @@ each(names, function(item, indice){
 ////////// PROBLEM 7 //////////
 
 /*
-  Write a function called getUserById that takes in three parameters: an array of objects (users), an id and a callback, and searches for the user with a matching id.
+  Write a function called getUserById that takes in three parameters: an array of objects (users), an id and a callback, and searches for the user with a matching id. DONE
   When the correct user object is found, invoke the callback with the user object as an argument.
 */
 
 const getUserById = (arr, id, cb) => {
 
-  cb(users)
-  if (users.id === '16t'){
-    return cb(users.name)
+  for(i=0; i > arr.length; i++){
+    if (arr[i].id === id){
+      return cb(users.name)
+    }
   }
- 
+ cb(users)
 }
 
 

@@ -204,7 +204,7 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
   Your output should look like this -> [15, 19, 26, 29, 35, 44, 58]
 */
   
-//Code Here
+//Code Here //have to convert the strings to numbers parseInt
 
 
 
