@@ -104,9 +104,15 @@ multiply(4, 3, function(answer){
 
 const contains = (arr, name, cb)=> {
 
-  cb()
+  for(i=0; i < arr.length; i++){
+  if(arr[i] === name){
+    cb(true)
+  }  
+  }
+  cb(false)
 
 } 
+
 
 // Do not edit the code below.
 contains(names, 'Colt', function(result){
@@ -127,8 +133,19 @@ contains(names, 'Colt', function(result){
   Remove any duplicate values from the array, and invoke the callback with the modified array as an argument.
 */
 
+
 const uniq = (arr, cb) => {
-cb()
+
+for (let i =0; i < arr.length; i++){
+for (j=i+1; j< arr.length; j++){
+  if (arr[i]===arr[j]){
+    arr.splice(j, 1)
+    j--;
+  }
+}
+
+}
+cb(arr)
 }
 
 // Do not edit the code below.
@@ -146,7 +163,11 @@ uniq(names, function(uniqArr){
   For each name in the array, invoke the callback and pass in the name and the name's index as arguments.
 */
 
-//Code Here 
+const each = (arr, cb) => {
+
+
+
+} 
 
 // Do not edit the code below.
 each(names, function(item, indice){
@@ -163,16 +184,14 @@ each(names, function(item, indice){
   When the correct user object is found, invoke the callback with the user object as an argument.
 */
 
-const getUserById = (arrObj, id, cb) => {
+const getUserById = (arr, id, cb) => {
 
   cb(users)
   if (users.id === '16t'){
     return cb(users.name)
   }
  
-
 }
-
 
 
 

@@ -47,17 +47,15 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
 // Do not edit the code above.
 
 /*
-  Create a function named 'looper' that is given family as it's only argument. 
+  Create a function named 'looper' that is given family as it's only argument.  - DONE 
   Loop through the given array and alert every item in the array.
 */
 
 const looper = (family) => {
   for (i=0; i< family.length; i++){
-    return family(family[i])
+    alert(family[i])
   }
 }
-
-
 
 ////////// PROBLEM 4 //////////
 
@@ -66,14 +64,14 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 // Do not edit the code above.
 
 /*
-  Write a function called reversedLooper that is given letters as it's only argument. 
+  Write a function called reversedLooper that is given letters as it's only argument. - DONE
   Loop backwards, starting at the end of the letters array, alerting every item in the array.
 */
 
-const reversedLooper = (letters) => {
+const reversedLooper = (arr) => {
  
-  for(i=letters.length-1; i>0; i--){
-    console.log(letters[i])
+  for(i=arr.length-1; i>=0; i--){
+    alert(arr[i])
   }
 }
 
