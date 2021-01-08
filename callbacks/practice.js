@@ -165,7 +165,11 @@ uniq(names, function(uniqArr){
 
 const each = (arr, cb) => {
 
+for (i=0; i<arr.length; i++) {
 
+cb(arr[i])
+
+}
 
 } 
 
